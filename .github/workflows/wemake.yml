@@ -1,13 +1,8 @@
 name: "wemake_validation"
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "master" ]
-  schedule:
-    - cron: '28 18 * * 4'
+  # Disabled: lints non-existent 'digitalpy/' directory and missing WEMAKE_GIT_TOKEN secret
+  workflow_dispatch:
 
 jobs:
   analyze:

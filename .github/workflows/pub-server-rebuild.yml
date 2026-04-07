@@ -1,8 +1,7 @@
 name: "FTS Pub Server Rebuild"
 
 on:
-  schedule:
-    - cron: '0 1 * * *'
+  # Disabled: requires DO_API_TOKEN secret not configured in this fork
   workflow_dispatch:
 
 jobs:
